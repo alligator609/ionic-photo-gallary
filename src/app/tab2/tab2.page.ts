@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserPhoto } from '../model/user-photo';
 import { PhotoService } from '../services/photo.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { PhotoService } from '../services/photo.service';
 export class Tab2Page {
 
   constructor(public photoService: PhotoService) {}
-  
+
   addPhotoToGallery() {
     this.photoService.addNewToGallery();
   }
